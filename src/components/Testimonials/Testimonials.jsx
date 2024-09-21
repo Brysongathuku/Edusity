@@ -1,5 +1,5 @@
 
-import React ,{useRef}from 'react'
+import React ,{ useRef }from 'react'
 import './Testimonials.css'
 import next_icon from '../../assets/next-icon.png'
 import back_icon from '../../assets/back-icon.png'
@@ -17,7 +17,7 @@ if(tx > -50)
   {
     tx -=25;
   }
- slider.current.style.transform = 'translateX(${tx}%)';
+ slider.current.style.transform = `translateX(${tx}%)`;
   }
 
     const slideBackward =() =>{
@@ -26,7 +26,7 @@ if(tx > -50)
             {
               tx +=25;
             }
-           slider.current.style.transform = 'translateX(${tx}%)';
+           slider.current.style.transform = `translateX(${tx}%)`;
     }
   return (
     <div className= 'testimonials'>
